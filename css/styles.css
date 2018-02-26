@@ -1,52 +1,80 @@
-/* I am not using this because of Bootstrap???
-body, 
-html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-border:0;
-}
-
-html,
-html * {
-    padding: 0;
-    margin: 0;
-}
-*/
-
 body {
     padding: 3vh 8vw 0 8vw;
     background-color: aliceblue !important;
 }
 
+/* HEADER MENU */
+
 .col-sm-2 {
-    padding:1em;
+    display: flex;
 }
 
-.col-sm-10 {
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00005d;
+}
+
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    color: rgba(93, 0, 0, 0.62);
 }
 
 .logo {
-    max-width: 7em;
-    min-width: 5em;
-    border: 1em;
+    max-width: 5rem;
+    min-width: 5rem;
     margin: 0 auto;
+    align-self: center;
+}
+
+/*  BIG CONTAINERS */
+
+.main-text {
+    background-color: #d8edff;
+    padding: 0.6rem 6rem 2rem 1rem;
+    height: auto;
+    font-size: 2vh;
+}
+
+h2 {
+    font-size: 12vh;
 }
 
 .big-image-container {
     display: block;
     background-image: url(../img/sigma_delta.svg);
-    background-position: center;
+    */ background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 78vh;
-    margin-bottom: 1em;
-    padding:0;
+    height: 55vh;
+    padding: 0;
 }
 
+p {
+    text-align: justify;
+    font-size: 2vh;
+}
+
+.menu {
+    padding-top: 1rem;
+}
+
+.col-sm-8 {
+    padding: 0;
+}
+
+h2 {
+    display: block;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: rgba(93, 0, 0, 0.1);
+    font-size: 5rem;
+}
+
+/*  MENU BLOCK */
+
 .col-sm-3 {
-    height: 40vh;
+    height: 28vh;
 }
 
 .image-container-1 {
@@ -92,12 +120,120 @@ div[class^="image-container-"]:hover {
 }
 
 .txt-container {
-    height:15%;
+    height: 15%;
 }
 
 .svg-container {
-    width:8em;
-    height:8em;
+    width: 8rem;
+    height: 8rem;
     opacity: 0.3;
     align-self: center;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00005d;
+    font-size: 1.2rem;
+}
+
+/* SOCIAL MEDIA MENU */
+
+.social-side-menu {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.social-container {
+    background-color: #00005d;
+    width: 3.4rem;
+    height: 3.4rem;
+    color: white;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font: white;
+    font-size: 2.24rem;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1024px) {
+    .main-text {
+        padding: 0.5rem 3rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width:880px) {
+    h2 {
+        font-size: 11vh;
+    }
+    .social-side-menu {
+        display: flex;
+        flex-flow: row;
+        position: relative;
+        justify-content: space-between;
+        padding: 2rem 9rem 2rem 9rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .main-text {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    p {
+        font-size: 1.7vh;
+    }
+    
+    h2 {
+        font-size: 6.5vh;
+    }
+    
+    .big-image-container {
+        background-image: url(../img/sigma_delta_small.svg);
+        background-position: center;
+        height: 58vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main-text {
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    h1 {
+        line-height: 2.1rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+     p {
+        font-size: 2.2vh;
+    }
+    
+    .col-sm-3 {
+        padding: 0 0 2rem 0;
+    }
+
+    .social-side-menu {
+        display: flex;
+        flex-flow: row;
+        position: relative;
+        justify-content: space-between;
+        padding: 2rem 1rem 2rem 1rem;
+    }
 }
