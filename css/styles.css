@@ -167,7 +167,7 @@ a {
 }
 
 a:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 /* MEDIA QUERIES */
@@ -200,26 +200,26 @@ a:hover {
     p {
         font-size: 1.7vh;
     }
-    
+
     h2 {
         font-size: 6.5vh;
     }
-    
+
     .big-image-container {
         background-image: url(../img/sigma_delta_small.svg);
         background-position: center;
         height: 58vh;
     }
-    
+
     .col-sm-3 {
         padding-left: 5px!important;
         padding-right 5px!important;
     }
-    
+
     .image-container-2 {
         background-position: top;
     }
-    
+
     .image-container-4 {
         background-position: right;
     }
@@ -233,15 +233,15 @@ a:hover {
     h1 {
         line-height: 2.1rem;
     }
-    
+
     h2 {
         font-size: 3rem;
     }
-    
-     p {
+
+    p {
         font-size: 2.2vh;
     }
-    
+
     .col-sm-3 {
         padding: 0;
     }
@@ -253,12 +253,12 @@ a:hover {
         justify-content: space-between;
         padding: 2rem 1rem 2rem 1rem;
     }
-    
+
     .big-image-container {
         height: 66vh;
     }
-    
+
     .col-sm-3 {
-    height: 50vh;
+        height: 50vh;
     }
 }
