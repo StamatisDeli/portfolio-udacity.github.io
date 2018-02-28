@@ -29,6 +29,16 @@ h4 {
 
 /*  BIG CONTAINERS */
 
+.big-image-container {
+    display: block;
+    background-image: url(../img/sigma_delta.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    padding: 0;
+}
+
 .main-text {
     background-color: #d8edff;
     padding: 0.6rem 6rem 2rem 1rem;
@@ -36,27 +46,9 @@ h4 {
     font-size: 2vh;
 }
 
-h2 {
-    font-size: 12vh;
-}
-
-.big-image-container {
-    display: block;
-    background-image: url(../img/sigma_delta.svg);
-    */ background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vh;
-    padding: 0;
-}
-
 p {
     text-align: justify;
     font-size: 2vh;
-}
-
-.menu {
-    padding-top: 1rem;
 }
 
 .col-sm-8 {
@@ -69,9 +61,14 @@ h2 {
     font-family: 'Press Start 2P', cursive;
     color: rgba(93, 0, 0, 0.1);
     font-size: 5rem;
+    font-size: 12vh;
 }
 
 /*  MENU BLOCK */
+
+.menu {
+    padding-top: 1rem;
+}
 
 .col-sm-3 {
     height: 28vh;
@@ -180,8 +177,8 @@ a:hover {
 
 @media screen and (min-width:881px) {
     .container {
-        padding:0!important;
-        border:0!important;
+        padding: 0!important;
+        border: 0!important;
     }
     .social-responsive {
         position: absolute;
@@ -199,11 +196,11 @@ a:hover {
         padding: 2rem 0 0 0;
         align-self: center;
     }
-    
+
     ul {
         display: flex;
     }
-    
+
     li {
         display: inline;
         padding-left: 0.5rem;
@@ -230,8 +227,8 @@ a:hover {
     }
 
     .col-sm-3 {
-        padding-left: 5px!important;
-        padding-right 5px!important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
 
     .image-container-2 {
