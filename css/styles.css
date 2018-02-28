@@ -178,18 +178,36 @@ a:hover {
     }
 }
 
+@media screen and (min-width:881px) {
+    .container {
+        padding:0!important;
+        border:0!important;
+    }
+    .social-responsive {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+}
+
 @media screen and (max-width:880px) {
     h2 {
         font-size: 11vh;
     }
-    .social-side-menu {
-        display: flex;
-        flex-flow: row;
-        position: relative;
-        justify-content: space-between;
-        padding: 2rem 9rem 2rem 9rem;
-    }
 
+    .social-responsive {
+        padding: 2rem 0 0 0;
+        align-self: center;
+    }
+    
+    ul {
+        display: flex;
+    }
+    
+    li {
+        display: inline;
+        padding-left: 0.5rem;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -244,14 +262,6 @@ a:hover {
 
     .col-sm-3 {
         padding: 0;
-    }
-
-    .social-side-menu {
-        display: flex;
-        flex-flow: row;
-        position: relative;
-        justify-content: space-between;
-        padding: 2rem 1rem 2rem 1rem;
     }
 
     .big-image-container {
